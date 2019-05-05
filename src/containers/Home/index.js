@@ -39,6 +39,10 @@ export class Home extends Component {
             })
             .then(() => {
                 this.loadGAPI();
+            })
+            .catch((error) => {
+                // eslint-disable-next-line no-console
+                console.log('error', error);
             });
     };
 
@@ -65,6 +69,10 @@ export class Home extends Component {
                 }
 
                 this.onLoad({ entries });
+            })
+            .catch((error) => {
+                // eslint-disable-next-line no-console
+                console.log('error', error);
             });
     }
 

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const TableBody = (props) => {
 
     const { data } = props;
-
+    
     return (
         <Fragment>
             { data.map(item=>(
